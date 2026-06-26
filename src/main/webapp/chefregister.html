@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chef Registration | ChefConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: url('chef2.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .form-card {
+      width: 400px;
+      padding: 40px 32px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.3);
+      color: #fff;
+    }
+
+    input::placeholder {
+      color: #eee;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #38bdf8;
+      color: #0f172a;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.9rem;
+    }
+
+    .login-link a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-card">
+    <h2>Chef Registration</h2>
+    <form action="chefregister" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required />
+
+      <label for="contact">Contact</label>
+      <input type="tel" name="contact" required />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" required />
+
+      <label for="cuisine">Cuisine</label>
+      <input type="text" name="cuisine" required />
+
+      <label for="experience">Experience</label>
+      <input type="number" name="experience" min="0" required />
+
+      <button type="submit">Register as Chef</button>
+    </form>
+
+    <div class="login-link">
+      Already registered? <a href="login.html">Login here</a>
+    </div>
+  </div>
+
+</body>
+</html>

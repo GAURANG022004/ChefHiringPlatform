@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChefConnect | Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: url('chef2.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 360px;
+      padding: 40px 32px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.25); /* Mild glass effect */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px); /* Just slightly blurred */
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      color: #fff;
+      animation: fadeIn 0.8s ease forwards;
+      transform: translateY(40px);
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+
+    label {
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    input::placeholder {
+      color: #f3f3f3;
+    }
+
+    select option {
+      color: #0f172a;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #38bdf8;
+      border: none;
+      border-radius: 14px;
+      color: #0f172a;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 0.85rem;
+    }
+
+    .register-link a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px dashed currentColor;
+    }
+
+    .register-link a:hover {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Welcome Back 👋</h2>
+    <form action="cheflogin" method="POST">
+      <label for="role">Login as</label>
+      <select name="role" id="role" required>
+        <option value="" hidden>Choose role …</option>
+        <option value="admin">🛠️ Admin</option>
+        <option value="chef">👨‍🍳 Chef</option>
+        <option value="customer">🧑‍💼 Customer</option>
+      </select>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+      <button type="submit">Login ➜</button>
+    </form>
+
+    <div class="register-link">
+      Don’t have an account?<br>
+      <a href="chefregister.html">👨‍🍳 Register as Chef</a> |
+      <a href="customerregister.html">🧑‍💼 Register as Customer</a>
+    </div>
+  </div>
+
+</body>
+</html>
