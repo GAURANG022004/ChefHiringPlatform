@@ -1,6 +1,7 @@
 package ChefProject;
 
 
+//GetSet Class
 public class GetSet {
 
     public static int chefUid;
