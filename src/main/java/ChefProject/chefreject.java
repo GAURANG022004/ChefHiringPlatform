@@ -28,6 +28,8 @@ public class chefreject extends HttpServlet {
 
         int userId = Integer.parseInt(uid);
 
+        //Making COnnection
+
         try (Connection con = DBConnection.connect();
              PreparedStatement ps = con.prepareStatement(
                      "UPDATE chef_user SET status = 'REJECTED' WHERE uid = ?")) {
