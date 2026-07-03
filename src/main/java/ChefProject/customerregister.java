@@ -58,8 +58,8 @@ public class customerregister extends HttpServlet {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        
-        
         }
+        
+        
     }
 }
