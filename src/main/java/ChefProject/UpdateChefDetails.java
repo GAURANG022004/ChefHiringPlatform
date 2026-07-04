@@ -71,6 +71,8 @@ public class UpdateChefDetails extends HttpServlet {
                 }
             } catch (Exception e) {
                 e.printStackTrace();
+            
+
             }
         }
     }
