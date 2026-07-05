@@ -32,7 +32,10 @@ public class UpdateCustomerDetails extends HttpServlet {
         Connection con = null;
         PreparedStatement ps = null;
 
-        try {
+        try 
+        {
+
+        
             con = DBConnection.connect();
 
             String sql = "UPDATE customer SET name=?, email=?, contact=?, address=? , password=? WHERE cid=?";
