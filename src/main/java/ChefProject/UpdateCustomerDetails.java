@@ -32,7 +32,8 @@ public class UpdateCustomerDetails extends HttpServlet {
         Connection con = null;
         PreparedStatement ps = null;
 
-        try 
+        try
+        
         {
 
         
