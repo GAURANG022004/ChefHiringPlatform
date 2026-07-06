@@ -27,7 +27,8 @@ public class updatestatusbooking extends HttpServlet {
 
             response.getWriter().println("Invalid request.");
             return;
-        }
+        
+                }
 
         int id = Integer.parseInt(bookingId);
 
