@@ -12,6 +12,7 @@ public class DBConnection {
         Connection con = null;
 
         try {
+
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             con = DriverManager.getConnection(
@@ -24,6 +25,8 @@ public class DBConnection {
 
         } catch (SQLException e) {
             e.printStackTrace();
+        
+
         }
 
         return con;
