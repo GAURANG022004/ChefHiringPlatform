@@ -24,6 +24,8 @@ public class chefreject extends HttpServlet {
         if (uid == null || uid.trim().isEmpty()) {
             response.sendRedirect("error.jsp");
             return;
+        
+
         }
 
         int userId = Integer.parseInt(uid);
